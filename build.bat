@@ -6,8 +6,8 @@ setlocal EnableDelayedExpansion
 :: "Ninja" / "ninja"
 :: "Visual Studio 17 2022" / "visual_studio"
 ::
-set BUILD_TYPE=Ninja
-set BUILD_SUFFIX=ninja
+set BUILD_TYPE="Visual Studio 17 2022"
+set BUILD_SUFFIX=visual_studio
 
 chcp 65001
 
@@ -38,3 +38,5 @@ set arr[5].folder=obuchaika
 for /L %%i in (0,1,5) do ( 
 	copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
 )
+
+copy ..\run_tests.bat .
