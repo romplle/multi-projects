@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <vector>
 
 void sort_by_bubble(std::vector<int>& arr);
 
 int main() {
     std::vector<int> arr = { 1, 8, 2, 5, 3, 11 };
-    std::cout << "Ìàññèâ äî ñîðòèðîâêè:";
+    std::cout << "ÐœÐ°ÑÑÐ¸Ð² Ð´Ð¾ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸:";
     for (int i = 0; i < arr.size(); i++) {
         std::cout << ' ' << arr[i];
     }
@@ -13,7 +13,7 @@ int main() {
 
     sort_by_bubble(arr);
 
-    std::cout << "Ìàññèâ ïîñëå ñîðòèðîâêè:";
+    std::cout << "ÐœÐ°ÑÑÐ¸Ð² Ð¿Ð¾ÑÐ»Ðµ ÑÐ¾Ñ€Ñ‚Ð¸Ñ€Ð¾Ð²ÐºÐ¸:";
     for (int i = 0; i < arr.size(); i++) {
         std::cout << ' ' << arr[i];
     }
