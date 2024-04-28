@@ -1,10 +1,10 @@
-target_sources(${SCL_LIB} 
+target_sources(scl_lib 
 	PRIVATE
 		logger.cpp
 	PUBLIC
 		logger.hpp
 )
 
-target_include_directories(${SCL_LIB} PUBLIC
+target_include_directories(scl_lib PUBLIC
 	${PROJECT_SOURCE_DIR}/src/logger
 )

@@ -2,7 +2,7 @@
 
 #include <cstddef>
 
-namespace IBusko {
+namespace KSerikov {
 	template <typename T> 
 	class DoublyLinkedList {
 		private:

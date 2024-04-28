@@ -1,4 +1,4 @@
-target_sources(${SCL_LIB} 
+target_sources(scl_lib
 	PRIVATE
 		
 	PUBLIC
@@ -7,6 +7,6 @@ target_sources(${SCL_LIB}
 		vector_stack.hpp
 )
 
-target_include_directories(${SCL_LIB} PUBLIC
+target_include_directories(scl_lib PUBLIC
 	${PROJECT_SOURCE_DIR}/src/stack
 )
