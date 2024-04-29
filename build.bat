@@ -29,6 +29,8 @@ set arr[4].file=run_base_theory_tasks_p1.bat
 set arr[5].file=run_obuchaika.bat
 set arr[6].file=run_comb_bubble_sort.bat
 set arr[7].file=run_long_number_tests.bat
+set arr[8].file=run_list_tests.bat
+set arr[9].file=run_vector_tests.bat
 
 set arr[0].folder=bubble_sort
 set arr[1].folder=bubble_sort_mf
@@ -38,8 +40,10 @@ set arr[4].folder=base_theory_tasks_p1
 set arr[5].folder=obuchaika
 set arr[6].folder=comb_bubble_sort
 set arr[7].folder=scl\test\long_number
+set arr[8].folder=scl\test\list
+set arr[9].folder=scl\test\vector
 
-for /L %%i in (0,1,7) do ( 
+for /L %%i in (0,1,9) do ( 
 	copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
 )
 

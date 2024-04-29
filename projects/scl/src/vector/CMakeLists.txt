@@ -1,6 +1,6 @@
 target_sources(scl_lib 
 	PRIVATE
-		
+		vector.cpp
 	PUBLIC
 		vector.hpp
 )
