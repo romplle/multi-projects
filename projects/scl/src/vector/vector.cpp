@@ -10,6 +10,7 @@ KSerikov::Vector<T>::Vector() noexcept {
 template <typename T>
 KSerikov::Vector<T>::~Vector() noexcept {
     delete[] arr;
+    arr = nullptr;
 };
 
 
@@ -101,9 +102,3 @@ bool KSerikov::Vector<T>::remove_first(const T& value) noexcept {
 
     return false;
 };
-
-
-template <typename T>
-std::size_t KSerikov::Vector<T>::size() const noexcept {
-    return vec_size;
-}

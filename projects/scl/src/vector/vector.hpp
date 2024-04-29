@@ -22,6 +22,6 @@ namespace KSerikov {
 			bool insert(const int position, const T& value);
 			void print() const noexcept;
 			bool remove_first(const T& value) noexcept;
-			std::size_t size() const noexcept;
+			std::size_t size() const noexcept { return vec_size; };
 	};
 }
