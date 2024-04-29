@@ -31,7 +31,7 @@ set arr[1].folder=comb_bubble_sort
 set arr[2].folder=obuchaika
 set arr[3].folder=scl\test\long_number
 
-for /L %%i in (0,1,3) do ( 
+for /L %%i in (0,1,4) do ( 
 	if not exist .\!arr[%%i].folder!\!arr[%%i].file! (
 		copy ..\%SOURCE_FOLDER%\!arr[%%i].folder!\!arr[%%i].file! .\!arr[%%i].folder!
 	)
