@@ -1,3 +1,6 @@
-project(comb_bubble_sort)
+project(unit_test)
 
-add_executable(${PROJECT_NAME} main.cpp)
+add_library(comb_bubble_sort_lib "")
+
+add_subdirectory(src)
+add_subdirectory(test)
