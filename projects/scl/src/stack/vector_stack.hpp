@@ -6,7 +6,7 @@ namespace IBusko {
 		private:
 			T* arr;
 			std::size_t capacity = 10;
-			std::size_t head_index = -1;
+			std::size_t size = 0;
 		public:
 			VectorStack() noexcept;
 			VectorStack(const VectorStack&) = delete;
@@ -16,7 +16,7 @@ namespace IBusko {
 			bool empty() const noexcept;
 			void pop() noexcept;
 			void push(const T& value) noexcept;
-			std::size_t size() const noexcept;
+			std::size_t get_size() const noexcept;
 			T top() const noexcept;
 	};
 }

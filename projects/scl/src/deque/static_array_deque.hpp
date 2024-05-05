@@ -5,7 +5,7 @@ namespace IBusko {
 	class StaticArrayDeque {
 		private:
 			T arr[n];
-			std::size_t head_index = -1;
+			std::size_t size = 0;
 		public:
 			StaticArrayDeque() noexcept {};
 			StaticArrayDeque(const StaticArrayDeque&) = delete;
@@ -17,7 +17,7 @@ namespace IBusko {
 			void pop_front();
 			void push_back(const T& value);
 			void push_front(const T& value);
-			std::size_t size() const noexcept;
+			std::size_t get_size() const noexcept;
 			T back() const noexcept;
 			T front() const noexcept;
 	};

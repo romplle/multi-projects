@@ -1,4 +1,4 @@
-target_sources(scl_lib
+target_sources(${SCL_LIB} 
 	PRIVATE
 		text.cpp
 		utility.cpp
@@ -8,6 +8,6 @@ target_sources(scl_lib
 		utility.hpp
 )
 
-target_include_directories(scl_lib PUBLIC
+target_include_directories(${SCL_LIB} PUBLIC
 	${PROJECT_SOURCE_DIR}/src/text
 )

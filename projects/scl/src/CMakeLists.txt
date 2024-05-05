@@ -1,4 +1,4 @@
-add_library(scl_lib "")
+add_library(${SCL_LIB} "")
 
 add_subdirectory(deque)
 add_subdirectory(list)

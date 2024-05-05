@@ -1,4 +1,4 @@
-target_sources(scl_lib
+target_sources(${SCL_LIB} 
 	PRIVATE
 		
 	PUBLIC
@@ -7,6 +7,6 @@ target_sources(scl_lib
 		vector_deque.hpp
 )
 
-target_include_directories(scl_lib PUBLIC
+target_include_directories(${SCL_LIB} PUBLIC
 	${PROJECT_SOURCE_DIR}/src/deque
 )

@@ -5,7 +5,7 @@ namespace IBusko {
 	class StaticArrayStack {
 		private:
 			T arr[n];
-			std::size_t head_index;
+			std::size_t size = 0;
 		public:
 			StaticArrayStack() noexcept {};
 			StaticArrayStack(const StaticArrayStack&) = delete;
@@ -15,7 +15,7 @@ namespace IBusko {
 			bool empty() const noexcept;
 			void pop();
 			void push(const T& value);
-			std::size_t size() const noexcept;
+			std::size_t get_size() const noexcept;
 			T top() const noexcept;
 	};
 }
