@@ -9,7 +9,7 @@ KSerikov::DoublyLinkedList<T>::~DoublyLinkedList() noexcept {
         current = current->next;
         delete temp;
     }
-}
+};
 
 
 template <typename T>
@@ -24,7 +24,7 @@ void KSerikov::DoublyLinkedList<T>::push_back(const T& value) noexcept {
     }
 
     end = new_end;
-}
+};
 
 
 template <typename T>
@@ -106,4 +106,4 @@ std::size_t KSerikov::DoublyLinkedList<T>::size() const noexcept {
     }
 
     return size;
-};
+}
